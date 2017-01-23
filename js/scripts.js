@@ -26,18 +26,16 @@ $(function(){
     $("#show-lists ul").append("<li><span class='todolists'>" + newToDoList.whatToDo + "</span></li>");
 
     $(".todolists").last().click(function(){
-      $("#show-detail").toggle();
+      $("#show-detail").toggle(this);
       $(".todoitem").text(newToDoList.whatToDo);
       $(".tododate").text(newToDoList.deadlineDate);
       $(".todotime").text(newToDoList.deadlineTime);
       $(".todonote").text(newToDoList.notes);
     });
 
-    console.log(newToDoList.whatToDo);
-    console.log(newToDoList.deadlineDate);
-    console.log(newToDoList.deadlineTime);
-    console.log(newToDoList.notes);
-
+    $("#complete").click(function(){
+      $(".todolists").this().remove();
+    });
     event.preventDefault();
   });
 

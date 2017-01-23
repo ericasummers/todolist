@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css" charset="utf-8">
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -11,27 +12,41 @@
   <body>
     <div class="container">
       <h1>To Do List</h1>
-      <form class="form-group" id="todolistform">
-        <label for="whattodo">What To Do:</label>
-        <input type="text" id="whattodo" class="form-control">
 
-        <label for="deadlinedate">Date to Complete:</label>
-        <input type="date" id="deadlinedate" class="form-control">
+      <div class="panel">
+        <div class="panel-body">
+          <form class="form-group" id="todolistform">
+            <div id="formlist" class="row">
+              <div class="col-md-12">
+                <label for="whattodo">What To Do:</label>
+                <input type="text" id="whattodo" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label for="deadlinedate">Date to Complete:</label>
+                <input type="date" id="deadlinedate" class="form-control">
+              </div>
+              <div class="col-md-6">
 
-        <label for="deadlinetime">Time to Complete by:</label>
-        <select id="deadlinetime" class="form-control">
-          <option value="7AM">By 7:00AM</option>
-          <option value="12PM">Before lunch</option>
-          <option value="5PM">By 5:00PM</option>
-          <option value="8PM">By 8:00PM</option>
-          <option value="12AM">Before midnight</option>
-        </select>
-
-        <label for="notes">Notes &amp; Details:</label>
-        <textarea id="notes" rows="8" cols="40" type="text" class="form-control"></textarea>
-
-        <button type="submit" class="btn">Submit!</button>
-      </form>
+                <label for="deadlinetime">Time to Complete by:</label>
+                <select id="deadlinetime" class="form-control">
+                  <option value="7AM">By 7:00AM</option>
+                  <option value="12PM">Before lunch</option>
+                  <option value="5PM">By 5:00PM</option>
+                  <option value="8PM">By 8:00PM</option>
+                  <option value="12AM">Before midnight</option>
+                </select>
+              </div>
+              <div class="col-md-12">
+                <label for="notes">Notes &amp; Details:</label>
+                <textarea id="notes" rows="8" cols="40" type="text" class="form-control"></textarea>
+              </div>
+              <div class="col-md-12">
+                <button type="submit" class="btn btn-block btn-warning">Submit!</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
 
 
       <div id="show-lists">
@@ -50,6 +65,8 @@
         <p class="todotime"></p>
         <h4>Note</h4>
         <p class="todonote"></p>
+
+        <button id="complete" class="btn btn-info">Done!</button>
       </div>
 
     </div>

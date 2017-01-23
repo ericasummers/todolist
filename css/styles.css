@@ -1,3 +1,7 @@
+body {
+  background-color: #C5D5D8;
+}
+
 #show-lists {
   display: none;
 }
@@ -14,4 +18,20 @@
 .todolists:hover {
   color:orange;
   text-decoration: underline;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+}
+
+#todolistform button {
+  margin-top: 20px;
+}
+
+.panel {
+  background-color: #F1E1AB;
+  width: 64%;
+  display: block;
+  margin: 20px auto;
 }
