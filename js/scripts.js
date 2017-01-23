@@ -25,6 +25,13 @@ $(function(){
     $("#show-lists").show();
     $("#show-lists ul").append("<li><span class='todolists'>" + newToDoList.whatToDo + "</span></li>");
 
+    $(".todolists").last().click(function(){
+      $("#show-detail").toggle();
+      $(".todoitem").text(newToDoList.whatToDo);
+      $(".tododate").text(newToDoList.deadlineDate);
+      $(".todotime").text(newToDoList.deadlineTime);
+      $(".todonote").text(newToDoList.notes);
+    });
 
     console.log(newToDoList.whatToDo);
     console.log(newToDoList.deadlineDate);

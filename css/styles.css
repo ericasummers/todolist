@@ -5,3 +5,13 @@
 #show-detail {
   display: none;
 }
+
+.todolists {
+  cursor: pointer;
+  color: darkred;
+}
+
+.todolists:hover {
+  color:orange;
+  text-decoration: underline;
+}
