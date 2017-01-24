@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>To Do List</h1>
+      <h1 id="five">To Do List</h1>
 
       <div class="panel">
         <div class="panel-body">
@@ -48,25 +48,29 @@
         </div>
       </div>
 
-
       <div id="show-lists">
-        <h2>To Do List Items:</h2>
-        <ul>
+        <div class="panel">
+          <div class="panel-body">
+            <h2>To Do List Items:</h2>
+            <ul>
 
-        </ul>
-      </div>
+            </ul>
 
-      <div id="show-detail">
-        <h4>To Do Item</h4>
-        <p class="todoitem"></p>
-        <h4>Deadline Date</h4>
-        <p class="tododate"></p>
-        <h4>Deadline Time</h4>
-        <p class="todotime"></p>
-        <h4>Note</h4>
-        <p class="todonote"></p>
+            <div id="show-detail">
+              <h4>To Do Item</h4>
+              <p class="todoitem"></p>
+              <h4>Deadline Date</h4>
+              <p class="tododate"></p>
+              <h4>Deadline Time</h4>
+              <p class="todotime"></p>
+              <h4>Note</h4>
+              <p class="todonote"></p>
+            </div>
 
-        <button id="complete" class="btn btn-info">Done!</button>
+            <p>Select a task and click this button if it is complete!</p>
+            <button id="complete" class="btn btn-info">Done!</button>
+          </div>
+        </div>
       </div>
 
     </div>
